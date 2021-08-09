@@ -10,8 +10,15 @@ import Figma from '../assets/Figma.png'
 
 const Wrapper=styled.div`
 margin-top:90px;
-height:500px;
-width:950px;
+min-height:500px;
+width:954px;
+
+@media(max-width:768px){
+    display:flex;
+    justify-content:space-around;
+    flex-flow:column nowrap;
+  
+  }
 `;
 const Title=styled.div`
 font-size: 34px;
@@ -32,7 +39,10 @@ margin-top:80px;
 
 
 const CardWrapper=styled.div`
-
+@media(max-width:768px){
+    width:100%;
+    margin-top:24px;
+  }
 `;
 const CardImage=styled.img`
 width:90px;
